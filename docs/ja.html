@@ -23,7 +23,7 @@
   <div class="inner">
     <a class="brand" href="#top" aria-label="Junhao Zheng"><span class="mono">JZ</span><span class="name">Junhao Zheng</span></a>
     <nav class="nav" aria-label="ページ内ナビゲーション">
-      <a href="#about">概要</a><a href="#experience">経歴</a><a href="#skills">スキル</a><a href="#contact">連絡先</a>
+      <a href="#about">概要</a><a href="#journey">歩み</a><a href="#experience">経歴</a><a href="#skills">スキル</a><a href="#contact">連絡先</a>
     </nav>
     <div class="tools">
       <div class="langs" aria-label="Language">
@@ -69,20 +69,31 @@
       <p class="big">大阪</p>
       <p>日本 · 以前はカナダ</p>
     </article>
-    <article class="card reveal">
+    <article class="card span-2 reveal">
       <span class="label">話せる言語</span>
       <div class="speak"><span lang="en">English</span><span lang="zh-Hans">中文</span><span lang="ja">日本語</span></div>
     </article>
-    <article class="card reveal">
-      <span class="label">これまでの歩み</span>
-      <ol class="path"><li><b>2017</b><span>カナダ・レジャイナ · CS学士</span></li><li><b>2021</b><span>フルスタック開発 · DevPro</span></li><li><b>2026</b><span>大阪 · IBM Japan</span></li></ol>
-    </article>
+  </div>
+</section>
+
+<section id="journey" class="block">
+  <div class="sec-head reveal"><div><span class="eyebrow">02 — 歩み</span><h2>広州から大阪へ</h2></div></div>
+  <div class="card journey reveal">
+    <div class="globe-wrap">
+      <svg class="globe" viewBox="0 0 500 500" role="img" aria-label="地球儀：中国・広州 → カナダ・レジャイナ → 日本・大阪 のルート"></svg>
+      <button class="replay" type="button" aria-label="もう一度再生" title="もう一度再生"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+      <p class="globe-hint">ドラッグで地球を回せます</p>
+    </div>
+    <div class="j-side">
+      <ol class="stops"><li><button class="stop" type="button" data-lon="113.26" data-lat="23.13" data-label="広州" aria-pressed="true"><span class="stop-n">01</span><span><b>中国・広州</b><small>すべての始まり</small><span class="leg"></span></span></button></li><li><button class="stop" type="button" data-lon="-104.62" data-lat="50.45" data-label="レジャイナ" aria-pressed="false"><span class="stop-n">02</span><span><b>カナダ・レジャイナ</b><small>2017 · CSを学び、その後フルスタック開発</small><span class="leg"></span></span></button></li><li><button class="stop" type="button" data-lon="135.5" data-lat="34.69" data-label="大阪" aria-pressed="false"><span class="stop-n">03</span><span><b>日本・大阪</b><small>2026 · IBM ITスペシャリスト</small><span class="leg"></span></span></button></li></ol>
+      <div class="j-total"><span class="label">移動距離</span><p class="big"><span class="grad km-total">—</span><small>km</small></p></div>
+    </div>
   </div>
 </section>
 
 <section id="experience" class="block">
   <div class="sec-head reveal">
-    <div><span class="eyebrow">02 — 経歴</span><h2>これまでの経歴</h2></div>
+    <div><span class="eyebrow">03 — 経歴</span><h2>これまでの経歴</h2></div>
     <div class="filters" role="group" aria-label="経歴の絞り込み">
       <button type="button" data-filter="all" aria-pressed="true">すべて</button>
       <button type="button" data-filter="work" aria-pressed="false">職歴</button>
@@ -99,7 +110,7 @@
 </section>
 
 <section id="skills" class="block">
-  <div class="sec-head reveal"><div><span class="eyebrow">03 — スキル</span><h2>使っている技術</h2></div></div>
+  <div class="sec-head reveal"><div><span class="eyebrow">04 — スキル</span><h2>使っている技術</h2></div></div>
   <div class="skills">
     <article class="card reveal"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><h3>バックエンド</h3><ul class="chips"><li>Java</li><li>Spring Boot</li></ul></article>
     <article class="card reveal"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg></span><h3>フロントエンド</h3><ul class="chips"><li>Angular</li><li>HTML / CSS</li></ul></article>
@@ -110,7 +121,7 @@
 
 <section id="contact" class="block">
   <div class="card contact reveal">
-    <span class="eyebrow">04 — 連絡先</span>
+    <span class="eyebrow">05 — 連絡先</span>
     <h2>お気軽にどうぞ</h2>
     <p>企業システムやAI評価のことなど、お気軽にご連絡ください。LinkedInからご連絡いただけます。GitHubでは取り組んでいることも公開しています。</p>
     <div class="cta">
@@ -127,6 +138,9 @@
   <a href="#top">ページトップへ ↑</a>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
+<script src="js/journey.js" defer></script>
 </body>
 </html>
