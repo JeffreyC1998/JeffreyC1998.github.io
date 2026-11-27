@@ -33,7 +33,37 @@
     var addr = a.dataset.user + '@' + a.dataset.domain;
     a.href = 'mailto:' + addr;
     a.title = addr;
+    // mailto: does nothing when no mail app is set up, so also copy the
+    // address and show it on the button.
+    var label = a.querySelector('.email-label');
+    var original = label ? label.textContent : '';
+    var timer;
+    a.addEventListener('click', function () {
+      copyText(addr);
+      if (!label) return;
+      label.textContent = (a.dataset.copied || '') + addr;
+      clearTimeout(timer);
+      timer = setTimeout(function () { label.textContent = original; }, 4000);
+    });
   });
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).catch(function () { legacyCopy(text); });
+    } else {
+      legacyCopy(text);
+    }
+  }
+  function legacyCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
 
   // Experience filter
   var buttons = document.querySelectorAll('.filters button');

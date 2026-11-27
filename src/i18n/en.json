@@ -116,6 +116,7 @@
     "title": "Let's connect.",
     "text": "Want to talk about enterprise systems, AI evaluation, or something else entirely? Email me or find me on LinkedIn, and see what I'm building on GitHub.",
     "email": "Email",
+    "emailCopied": "Copied: ",
     "resume": "Résumé (PDF)"
   },
   "footer": {
