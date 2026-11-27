@@ -39,7 +39,7 @@
   if (!window.d3 || !window.topojson || !svgEl) { card.classList.add('no-globe'); return; }
   var d3 = window.d3;
 
-  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json')
+  fetch('data/land-110m.json')
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (topo) { init(window.topojson.feature(topo, topo.objects.land)); })
     .catch(function () { card.classList.add('no-globe'); });

@@ -107,13 +107,16 @@
     "backend": "バックエンド",
     "frontend": "フロントエンド",
     "ai": "AI・クラウド",
+    "game": "ゲーム開発",
     "ways": "働き方",
     "codeReview": "コードレビュー",
     "ragEval": "RAG評価"
   },
   "contact": {
     "title": "お気軽にどうぞ",
-    "text": "企業システムやAI評価のことなど、お気軽にご連絡ください。LinkedInからご連絡いただけます。GitHubでは取り組んでいることも公開しています。"
+    "text": "企業システムやAI評価のことなど、お気軽にご連絡ください。メールまたはLinkedInからご連絡いただけます。GitHubでは取り組んでいることも公開しています。",
+    "email": "メール",
+    "resume": "履歴書（PDF）"
   },
   "footer": {
     "backToTop": "ページトップへ ↑"

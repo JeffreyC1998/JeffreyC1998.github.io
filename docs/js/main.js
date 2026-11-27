@@ -28,6 +28,13 @@
     else if (mq.addListener) mq.addListener(onSystemChange);
   }
 
+  // Email link: the address is assembled here so it isn't in the HTML as plain text
+  document.querySelectorAll('.email-link').forEach(function (a) {
+    var addr = a.dataset.user + '@' + a.dataset.domain;
+    a.href = 'mailto:' + addr;
+    a.title = addr;
+  });
+
   // Experience filter
   var buttons = document.querySelectorAll('.filters button');
   buttons.forEach(function (btn) {

@@ -107,13 +107,16 @@
     "backend": "Backend",
     "frontend": "Frontend",
     "ai": "AI &amp; Cloud",
+    "game": "Game development",
     "ways": "Ways of working",
     "codeReview": "Code review",
     "ragEval": "RAG evaluation"
   },
   "contact": {
     "title": "Let's connect.",
-    "text": "Want to talk about enterprise systems, AI evaluation, or something else entirely? Reach me on LinkedIn, or see what I'm building on GitHub."
+    "text": "Want to talk about enterprise systems, AI evaluation, or something else entirely? Email me or find me on LinkedIn, and see what I'm building on GitHub.",
+    "email": "Email",
+    "resume": "Résumé (PDF)"
   },
   "footer": {
     "backToTop": "Back to top ↑"

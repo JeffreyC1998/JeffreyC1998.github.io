@@ -1,0 +1,24 @@
+# Fails if docs/*.html is out of date with src/ (someone forgot to run build.py).
+name: Check build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Rebuild pages
+        run: python build.py
+      - name: Check docs/ is up to date
+        run: |
+          if ! git diff --exit-code -- docs; then
+            echo "::error::docs/ is out of date. Run 'python build.py' and commit the result."
+            exit 1
+          fi

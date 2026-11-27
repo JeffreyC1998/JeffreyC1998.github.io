@@ -7,10 +7,15 @@
 Template syntax:
     {{> name}}      insert src/components/name.html
     {{some.key}}    insert the text at that key from the language's JSON file
+    {{build.year}}  the current year (for the footer)
+    {{build.years}} whole years since CAREER_START (for "5+ years")
+
+The build stops if the language files don't all have the same keys.
 
 Run:  python build.py      (serve.py also runs it on start)
 Only standard-library Python is needed.
 """
+import datetime
 import json
 import re
 from pathlib import Path
@@ -21,6 +26,9 @@ OUT = ROOT / "docs"
 
 # language code -> output file
 PAGES = {"en": "index.html", "ja": "ja.html", "zh": "zh.html"}
+
+# first month as a professional developer (DevPro, Aug 2021)
+CAREER_START = (2021, 8)
 
 INCLUDE = re.compile(r"\{\{>\s*([\w-]+)\s*\}\}")
 KEY = re.compile(r"\{\{\s*([\w.]+)\s*\}\}")
@@ -46,9 +54,36 @@ def lookup(data, key):
     return node
 
 
-def render(template, strings, lang):
-    # aria-current on the language switcher is derived, not translated
-    strings = dict(strings, current={
+def flat_keys(data, prefix=""):
+    keys = set()
+    for k, v in data.items():
+        key = f"{prefix}{k}"
+        keys |= flat_keys(v, key + ".") if isinstance(v, dict) else {key}
+    return keys
+
+
+def check_same_keys(all_strings):
+    base_lang = next(iter(all_strings))
+    base = flat_keys(all_strings[base_lang])
+    problems = []
+    for lang, strings in all_strings.items():
+        keys = flat_keys(strings)
+        if keys - base:
+            problems.append(f"[{lang}] keys not in {base_lang}.json: {', '.join(sorted(keys - base))}")
+        if base - keys:
+            problems.append(f"[{lang}] keys missing from {lang}.json: {', '.join(sorted(base - keys))}")
+    if problems:
+        raise SystemExit("\n".join(problems))
+
+
+def build_values(today):
+    years = today.year - CAREER_START[0] - (today.month < CAREER_START[1])
+    return {"year": str(today.year), "years": str(years)}
+
+
+def render(template, strings, lang, today):
+    # values derived at build time, not translated
+    strings = dict(strings, build=build_values(today), current={
         code: ' aria-current="page"' if code == lang else "" for code in PAGES
     })
     missing = []
@@ -66,11 +101,16 @@ def render(template, strings, lang):
     return html
 
 
-def build():
+def build(today=None):
+    today = today or datetime.date.today()
     template = expand_includes((SRC / "layout.html").read_text(encoding="utf-8"))
+    all_strings = {
+        lang: json.loads((SRC / "i18n" / f"{lang}.json").read_text(encoding="utf-8"))
+        for lang in PAGES
+    }
+    check_same_keys(all_strings)
     for lang, filename in PAGES.items():
-        strings = json.loads((SRC / "i18n" / f"{lang}.json").read_text(encoding="utf-8"))
-        html = render(template, strings, lang)
+        html = render(template, all_strings[lang], lang, today)
         (OUT / filename).write_text(html, encoding="utf-8", newline="\n")
         print(f"built docs/{filename}")
 

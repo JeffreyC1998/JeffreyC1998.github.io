@@ -107,13 +107,16 @@
     "backend": "后端",
     "frontend": "前端",
     "ai": "AI 与云",
+    "game": "游戏开发",
     "ways": "工作方式",
     "codeReview": "代码评审",
     "ragEval": "RAG 评估"
   },
   "contact": {
     "title": "保持联系",
-    "text": "想聊聊企业系统、AI 评估，或者别的话题？欢迎通过 LinkedIn 联系我，也可以去 GitHub 看看我在做什么。"
+    "text": "想聊聊企业系统、AI 评估，或者别的话题？欢迎发邮件或通过 LinkedIn 联系我，也可以去 GitHub 看看我在做什么。",
+    "email": "邮箱",
+    "resume": "简历（PDF）"
   },
   "footer": {
     "backToTop": "回到顶部 ↑"
