@@ -1,0 +1,2 @@
+# Keep LF line endings everywhere (Windows Git and WSL share this checkout)
+* text=auto eol=lf
