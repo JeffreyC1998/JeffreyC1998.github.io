@@ -3,7 +3,8 @@
     "lang": "zh-Hans",
     "title": "Junhao Zheng — 企业系统与 AI 工具",
     "description": "常驻大阪的 IT 工程师，从事企业系统与 AI 工具开发。",
-    "canonical": "https://jeffreyc1998.github.io/zh.html"
+    "canonical": "https://jeffreyc1998.github.io/zh.html",
+    "ogLocale": "zh_CN"
   },
   "nav": {
     "label": "页面导航",
@@ -12,11 +13,11 @@
     "experience": "经历",
     "skills": "技能",
     "contact": "联系",
-    "language": "Language",
+    "language": "语言",
     "themeToggle": "切换深色模式"
   },
   "hero": {
-    "status": "现居日本大阪 · IBM IT Specialist",
+    "status": "现居日本大阪 · IBM IT 专家",
     "hello": "你好，我是 Junhao。",
     "tagline": "我做企业系统，也做 AI 工具。",
     "lead": "目前在大阪的 IBM 参与企业 IT 与 AI 项目。此前在加拿大做过多年全栈开发。喜欢学习新技术，也享受把棘手的技术问题一步步拆开解决。",
@@ -107,7 +108,8 @@
     "frontend": "前端",
     "ai": "AI 与云",
     "ways": "工作方式",
-    "codeReview": "代码评审"
+    "codeReview": "代码评审",
+    "ragEval": "RAG 评估"
   },
   "contact": {
     "title": "保持联系",

@@ -220,7 +220,12 @@ footer a:hover{color:var(--ink)}
   .journey{grid-template-columns:1fr}
 }
 @media (max-width:760px){
-  .nav{display:none}
+  html{scroll-padding-top:120px}
+  .topbar .inner{flex-wrap:wrap;row-gap:6px;padding-bottom:8px}
+  .nav{order:3;width:100%;margin:0 -12px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{flex:none}
+  .nav + .tools{margin-left:auto}
   .t-card{grid-template-columns:1fr}
   .date{grid-column:1;grid-row:auto;order:-1;padding:0 0 6px}
   .t-head > div,.t-card > :not(.t-head){grid-column:1}

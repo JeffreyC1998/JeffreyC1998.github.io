@@ -1,14 +1,31 @@
 (function () {
   var root = document.documentElement;
 
-  // Theme toggle (dark by default; remembers the visitor's choice)
+  // Theme toggle: follows the system until the visitor picks one, then remembers it.
+  // The inline script in <head> sets the initial theme before first paint.
   var toggle = document.querySelector('.theme-toggle');
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  function applyTheme(theme) {
+    root.dataset.theme = theme;
+    if (themeMeta) themeMeta.content = theme === 'light' ? '#eef2f8' : '#0b1424';
+    if (toggle) toggle.setAttribute('aria-pressed', String(theme === 'dark'));
+  }
+  function storedTheme() {
+    try { var s = localStorage.getItem('theme'); return s === 'dark' || s === 'light' ? s : null; } catch (e) { return null; }
+  }
+  applyTheme(root.dataset.theme === 'light' ? 'light' : 'dark');
   if (toggle) {
     toggle.addEventListener('click', function () {
       var next = root.dataset.theme === 'light' ? 'dark' : 'light';
-      root.dataset.theme = next;
+      applyTheme(next);
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
+  }
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(prefers-color-scheme: light)');
+    var onSystemChange = function (e) { if (!storedTheme()) applyTheme(e.matches ? 'light' : 'dark'); };
+    if (mq.addEventListener) mq.addEventListener('change', onSystemChange);
+    else if (mq.addListener) mq.addListener(onSystemChange);
   }
 
   // Experience filter

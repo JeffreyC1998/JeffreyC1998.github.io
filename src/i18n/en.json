@@ -3,7 +3,8 @@
     "lang": "en",
     "title": "Junhao Zheng — Enterprise systems & AI tools",
     "description": "IT specialist in Osaka working on enterprise systems and AI tools.",
-    "canonical": "https://jeffreyc1998.github.io/"
+    "canonical": "https://jeffreyc1998.github.io/",
+    "ogLocale": "en_US"
   },
   "nav": {
     "label": "Sections",
@@ -107,7 +108,8 @@
     "frontend": "Frontend",
     "ai": "AI &amp; Cloud",
     "ways": "Ways of working",
-    "codeReview": "Code review"
+    "codeReview": "Code review",
+    "ragEval": "RAG evaluation"
   },
   "contact": {
     "title": "Let's connect.",

@@ -7,6 +7,15 @@
 <meta name="description" content="{{meta.description}}">
 <meta name="theme-color" content="#0b1424">
 <link rel="canonical" href="{{meta.canonical}}">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Junhao Zheng">
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.description}}">
+<meta property="og:url" content="{{meta.canonical}}">
+<meta property="og:locale" content="{{meta.ogLocale}}">
+<meta property="profile:first_name" content="Junhao">
+<meta property="profile:last_name" content="Zheng">
+<meta name="twitter:card" content="summary">
 <link rel="alternate" hreflang="zh-Hans" href="https://jeffreyc1998.github.io/zh.html">
 <link rel="alternate" hreflang="ja" href="https://jeffreyc1998.github.io/ja.html">
 <link rel="alternate" hreflang="en" href="https://jeffreyc1998.github.io/">
@@ -16,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="css/style.css">
-<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>(function(){var s=null;try{s=localStorage.getItem('theme')}catch(e){}var t=s==='dark'||s==='light'?s:(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==='light'?'#eef2f8':'#0b1424'})()</script>
 </head>
 <body>
 {{> header}}

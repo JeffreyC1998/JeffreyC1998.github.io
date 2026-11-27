@@ -3,7 +3,8 @@
     "lang": "ja",
     "title": "Junhao Zheng — 企業システムとAIツール",
     "description": "大阪で働くITスペシャリスト。エンタープライズシステムとAIツールの開発に携わっています。",
-    "canonical": "https://jeffreyc1998.github.io/ja.html"
+    "canonical": "https://jeffreyc1998.github.io/ja.html",
+    "ogLocale": "ja_JP"
   },
   "nav": {
     "label": "ページ内ナビゲーション",
@@ -12,7 +13,7 @@
     "experience": "経歴",
     "skills": "スキル",
     "contact": "連絡先",
-    "language": "Language",
+    "language": "言語",
     "themeToggle": "ダークモード切り替え"
   },
   "hero": {
@@ -107,7 +108,8 @@
     "frontend": "フロントエンド",
     "ai": "AI・クラウド",
     "ways": "働き方",
-    "codeReview": "コードレビュー"
+    "codeReview": "コードレビュー",
+    "ragEval": "RAG評価"
   },
   "contact": {
     "title": "お気軽にどうぞ",
