@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "lang": "zh-Hans",
+    "title": "Junhao Zheng — 企业系统与 AI 工具",
+    "description": "常驻大阪的 IT 工程师，从事企业系统与 AI 工具开发。",
+    "canonical": "https://jeffreyc1998.github.io/zh.html"
+  },
+  "nav": {
+    "label": "页面导航",
+    "about": "关于",
+    "journey": "足迹",
+    "experience": "经历",
+    "skills": "技能",
+    "contact": "联系",
+    "language": "Language",
+    "themeToggle": "切换深色模式"
+  },
+  "hero": {
+    "status": "现居日本大阪 · IBM IT Specialist",
+    "hello": "你好，我是 Junhao。",
+    "tagline": "我做企业系统，也做 AI 工具。",
+    "lead": "目前在大阪的 IBM 参与企业 IT 与 AI 项目。此前在加拿大做过多年全栈开发。喜欢学习新技术，也享受把棘手的技术问题一步步拆开解决。",
+    "ctaContact": "联系我",
+    "ctaExperience": "查看经历"
+  },
+  "about": {
+    "title": "简单认识一下",
+    "now": {
+      "label": "目前在做",
+      "title": "开发 AI 评估工具",
+      "text": "用 Python 和 Azure AI Foundry，对内部 AI 模型和 RAG 应用的输出按 Groundedness、Relevance 等指标打分。"
+    },
+    "years": {
+      "label": "软件开发",
+      "unit": "年",
+      "text": "从全栈 Web 应用到企业级 AI。"
+    },
+    "based": {
+      "label": "现居",
+      "city": "大阪",
+      "text": "日本 · 此前在加拿大"
+    },
+    "speak": {
+      "label": "会说的语言"
+    }
+  },
+  "journey": {
+    "title": "从广州到大阪",
+    "globeLabel": "地球仪：中国广州 → 加拿大里贾纳 → 日本大阪 的路线",
+    "replay": "重播路线",
+    "hint": "拖动可以旋转地球",
+    "guangzhou": {
+      "short": "广州",
+      "name": "中国 · 广州",
+      "note": "一切开始的地方"
+    },
+    "regina": {
+      "short": "里贾纳",
+      "name": "加拿大 · 里贾纳",
+      "note": "2017 · 读计算机科学，之后做全栈开发"
+    },
+    "osaka": {
+      "short": "大阪",
+      "name": "日本 · 大阪",
+      "note": "2026 · IBM IT Specialist"
+    },
+    "distance": "跨越距离"
+  },
+  "experience": {
+    "title": "一路走来",
+    "filterLabel": "筛选经历",
+    "kind": {
+      "all": "全部",
+      "work": "工作",
+      "education": "学历",
+      "volunteer": "志愿服务"
+    },
+    "ibm": {
+      "role": "IT Specialist",
+      "org": "IBM Japan Digital Service · 大阪（混合办公）",
+      "date": "2026.03 – 至今",
+      "p1": "派驻在企业客户的 IT 团队，负责维护和扩展遗留的 Java 系统，覆盖设计、开发、单元测试到集成测试的完整流程。",
+      "p2": "目前在 AI 开发团队，负责开发 AI 评估（Evaluation）工具，评估对象包括内部使用的 AI 模型和 RAG（检索增强生成）应用。工具用 Python 编写，借助 Azure AI Foundry 内置的评估器，按 Groundedness、Relevance 等评估指标给模型输出打分。"
+    },
+    "devpro": {
+      "role": "Software Developer",
+      "org": "DevPro · 为 Farm Credit Canada 提供咨询开发",
+      "date": "2021.08 – 2026.02",
+      "p1": "开发并维护网页应用：后端使用 Java（Spring Boot），前端使用 Angular、HTML 和 CSS。",
+      "p2": "参与交付的每个阶段，从需求梳理、设计，到测试、上线和运维支持；在敏捷/Scrum 团队中参加迭代计划、代码评审和复盘。"
+    },
+    "uregina": {
+      "degree": "计算机科学理学学士",
+      "org": "University of Regina（加拿大）",
+      "p1": "2020 年秋季入选 Dean's Honor List。"
+    },
+    "esl": {
+      "role": "志愿者（新生协助）",
+      "org": "University of Regina ESL（English as a Second Language）课程",
+      "date": "2017 – 2021 · 每学期",
+      "p1": "每个学期开学时（8 月和 1 月），接待新加入 ESL 课程的学生，帮助他们尽快适应：办理学生卡和交通卡，熟悉学校环境。对英语不太好的学生，我还提供过简单的中文和日语翻译协助。"
+    }
+  },
+  "skills": {
+    "title": "常用技术",
+    "backend": "后端",
+    "frontend": "前端",
+    "ai": "AI 与云",
+    "ways": "工作方式",
+    "codeReview": "代码评审"
+  },
+  "contact": {
+    "title": "保持联系",
+    "text": "想聊聊企业系统、AI 评估，或者别的话题？欢迎通过 LinkedIn 联系我，也可以去 GitHub 看看我在做什么。"
+  },
+  "footer": {
+    "backToTop": "回到顶部 ↑"
+  }
+}

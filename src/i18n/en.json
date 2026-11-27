@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Junhao Zheng — Enterprise systems & AI tools",
+    "description": "IT specialist in Osaka working on enterprise systems and AI tools.",
+    "canonical": "https://jeffreyc1998.github.io/"
+  },
+  "nav": {
+    "label": "Sections",
+    "about": "About",
+    "journey": "Journey",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "language": "Language",
+    "themeToggle": "Toggle dark mode"
+  },
+  "hero": {
+    "status": "Osaka, Japan · IT Specialist at IBM",
+    "hello": "Hi, I'm Junhao.",
+    "tagline": "I build enterprise systems &amp; AI tools.",
+    "lead": "I work on enterprise IT and AI projects at IBM in Osaka. Before that I spent several years as a full-stack developer in Canada. I enjoy picking up new technologies and working through hard technical problems.",
+    "ctaContact": "Get in touch",
+    "ctaExperience": "View experience"
+  },
+  "about": {
+    "title": "A quick snapshot",
+    "now": {
+      "label": "Currently",
+      "title": "Building AI evaluation tools",
+      "text": "Python tooling on Azure AI Foundry that scores in-house AI models and RAG applications on quality metrics such as groundedness and relevance."
+    },
+    "years": {
+      "label": "In software",
+      "unit": "years",
+      "text": "From full-stack web apps to enterprise AI."
+    },
+    "based": {
+      "label": "Based in",
+      "city": "Osaka",
+      "text": "Japan · previously Canada"
+    },
+    "speak": {
+      "label": "I speak"
+    }
+  },
+  "journey": {
+    "title": "From Guangzhou to Osaka",
+    "globeLabel": "Globe showing my route: Guangzhou, China → Regina, Canada → Osaka, Japan",
+    "replay": "Replay the journey",
+    "hint": "Drag to spin the globe",
+    "guangzhou": {
+      "short": "Guangzhou",
+      "name": "Guangzhou, China",
+      "note": "Where it all started"
+    },
+    "regina": {
+      "short": "Regina",
+      "name": "Regina, Canada",
+      "note": "2017 · CS degree, then full-stack developer"
+    },
+    "osaka": {
+      "short": "Osaka",
+      "name": "Osaka, Japan",
+      "note": "2026 · IT Specialist at IBM"
+    },
+    "distance": "Distance travelled"
+  },
+  "experience": {
+    "title": "Where I've been",
+    "filterLabel": "Filter experience",
+    "kind": {
+      "all": "All",
+      "work": "Work",
+      "education": "Education",
+      "volunteer": "Volunteering"
+    },
+    "ibm": {
+      "role": "IT Specialist",
+      "org": "IBM Japan Digital Service · Osaka (hybrid)",
+      "date": "Mar 2026 – Present",
+      "p1": "Embedded in an enterprise client's IT organization. Maintained and extended legacy Java systems across the whole cycle, from design and coding to unit and integration testing.",
+      "p2": "Now part of an AI development team, where I build evaluation tools for our in-house AI models, including RAG (retrieval-augmented generation) applications. Written in Python, they use Azure AI Foundry's built-in evaluators to score outputs on quality metrics such as groundedness and relevance."
+    },
+    "devpro": {
+      "role": "Software Developer",
+      "org": "DevPro · consulting for Farm Credit Canada",
+      "date": "Aug 2021 – Feb 2026",
+      "p1": "Built and maintained web applications with Spring Boot (Java) on the server and Angular, HTML and CSS in the browser.",
+      "p2": "Involved in every stage of delivery, from requirements and design to testing, release and support, working in an Agile/Scrum team with sprint planning, code reviews and retrospectives."
+    },
+    "uregina": {
+      "degree": "Bachelor of Science, Computer Science",
+      "org": "University of Regina (Canada)",
+      "p1": "Dean's Honor List, Fall 2020."
+    },
+    "esl": {
+      "role": "Volunteer, new-student support",
+      "org": "ESL program, University of Regina",
+      "date": "2017 – 2021 · each term",
+      "p1": "At the start of each term (August and January) I welcomed students newly joining the ESL program and helped them settle in, from practical matters like getting their student cards and transit passes to getting to know the university. For students with limited English, I also offered basic interpreting in Chinese and Japanese."
+    }
+  },
+  "skills": {
+    "title": "What I work with",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "ai": "AI &amp; Cloud",
+    "ways": "Ways of working",
+    "codeReview": "Code review"
+  },
+  "contact": {
+    "title": "Let's connect.",
+    "text": "Want to talk about enterprise systems, AI evaluation, or something else entirely? Reach me on LinkedIn, or see what I'm building on GitHub."
+  },
+  "footer": {
+    "backToTop": "Back to top ↑"
+  }
+}

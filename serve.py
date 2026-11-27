@@ -1,5 +1,6 @@
 """Serve the ./docs folder at http://localhost:8000/
 
+Rebuilds the pages from src/ first (see build.py).
 Put this file next to the `docs` folder (not inside it), then run:
     python3 serve.py          (or: python serve.py / py serve.py on Windows)
 Stop with Ctrl + C.
@@ -11,6 +12,10 @@ from pathlib import Path
 
 PORT = 8000
 ROOT = Path(__file__).resolve().parent / "docs"
+
+import build  # regenerate docs/*.html from src/ so the preview is never stale
+
+build.build()
 
 if not (ROOT / "index.html").exists():
     raise SystemExit(f"index.html not found in {ROOT}. Put serve.py next to the docs folder.")

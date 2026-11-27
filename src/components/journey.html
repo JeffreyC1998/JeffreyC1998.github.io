@@ -1,0 +1,14 @@
+<section id="journey" class="block">
+  <div class="sec-head reveal"><div><h2>{{journey.title}}</h2></div></div>
+  <div class="card journey reveal">
+    <div class="globe-wrap">
+      <svg class="globe" viewBox="0 0 500 500" role="img" aria-label="{{journey.globeLabel}}"></svg>
+      <button class="replay" type="button" aria-label="{{journey.replay}}" title="{{journey.replay}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+      <p class="globe-hint">{{journey.hint}}</p>
+    </div>
+    <div class="j-side">
+      <ol class="stops"><li><button class="stop" type="button" data-lon="113.26" data-lat="23.13" data-label="{{journey.guangzhou.short}}" aria-pressed="true"><span class="stop-n">01</span><span><b>{{journey.guangzhou.name}}</b><small>{{journey.guangzhou.note}}</small><span class="leg"></span></span></button></li><li><button class="stop" type="button" data-lon="-104.62" data-lat="50.45" data-label="{{journey.regina.short}}" aria-pressed="false"><span class="stop-n">02</span><span><b>{{journey.regina.name}}</b><small>{{journey.regina.note}}</small><span class="leg"></span></span></button></li><li><button class="stop" type="button" data-lon="135.5" data-lat="34.69" data-label="{{journey.osaka.short}}" aria-pressed="false"><span class="stop-n">03</span><span><b>{{journey.osaka.name}}</b><small>{{journey.osaka.note}}</small><span class="leg"></span></span></button></li></ol>
+      <div class="j-total"><span class="label">{{journey.distance}}</span><p class="big"><span class="grad km-total">—</span><small>km</small></p></div>
+    </div>
+  </div>
+</section>

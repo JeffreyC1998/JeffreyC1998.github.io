@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "lang": "ja",
+    "title": "Junhao Zheng — 企業システムとAIツール",
+    "description": "大阪で働くITスペシャリスト。エンタープライズシステムとAIツールの開発に携わっています。",
+    "canonical": "https://jeffreyc1998.github.io/ja.html"
+  },
+  "nav": {
+    "label": "ページ内ナビゲーション",
+    "about": "概要",
+    "journey": "歩み",
+    "experience": "経歴",
+    "skills": "スキル",
+    "contact": "連絡先",
+    "language": "Language",
+    "themeToggle": "ダークモード切り替え"
+  },
+  "hero": {
+    "status": "大阪在住 · IBM ITスペシャリスト",
+    "hello": "こんにちは、Junhao です。",
+    "tagline": "企業システムとAIツールをつくっています。",
+    "lead": "大阪のIBMで、エンタープライズITとAIのプロジェクトに参加しています。それ以前はカナダでフルスタックエンジニアとして数年間働いていました。新しい技術を学ぶことと、難しい技術課題を一つずつ解きほぐすことが好きです。",
+    "ctaContact": "連絡する",
+    "ctaExperience": "経歴を見る"
+  },
+  "about": {
+    "title": "ひと目でわかる自己紹介",
+    "now": {
+      "label": "いま取り組んでいること",
+      "title": "AI評価ツールの開発",
+      "text": "PythonとAzure AI Foundryで、社内AIモデルやRAGアプリケーションの出力をGroundednessやRelevanceなどの指標でスコアリングしています。"
+    },
+    "years": {
+      "label": "ソフトウェア開発",
+      "unit": "年",
+      "text": "フルスタックのWebアプリから企業向けAIまで。"
+    },
+    "based": {
+      "label": "拠点",
+      "city": "大阪",
+      "text": "日本 · 以前はカナダ"
+    },
+    "speak": {
+      "label": "話せる言語"
+    }
+  },
+  "journey": {
+    "title": "広州から大阪へ",
+    "globeLabel": "地球儀：中国・広州 → カナダ・レジャイナ → 日本・大阪 のルート",
+    "replay": "もう一度再生",
+    "hint": "ドラッグで地球を回せます",
+    "guangzhou": {
+      "short": "広州",
+      "name": "中国・広州",
+      "note": "すべての始まり"
+    },
+    "regina": {
+      "short": "レジャイナ",
+      "name": "カナダ・レジャイナ",
+      "note": "2017 · CSを学び、その後フルスタック開発"
+    },
+    "osaka": {
+      "short": "大阪",
+      "name": "日本・大阪",
+      "note": "2026 · IBM ITスペシャリスト"
+    },
+    "distance": "移動距離"
+  },
+  "experience": {
+    "title": "これまでの経歴",
+    "filterLabel": "経歴の絞り込み",
+    "kind": {
+      "all": "すべて",
+      "work": "職歴",
+      "education": "学歴",
+      "volunteer": "ボランティア"
+    },
+    "ibm": {
+      "role": "IT Specialist",
+      "org": "IBM Japan Digital Service · 大阪（ハイブリッド勤務）",
+      "date": "2026.03 – 現在",
+      "p1": "エンタープライズ顧客のIT部門に入り、レガシーなJavaシステムの保守・機能拡張を担当。設計から開発、単体テスト、結合テストまでを一通り経験しました。",
+      "p2": "現在はAI開発チームで、社内AIモデルやRAG（検索拡張生成）アプリケーションを対象としたAI評価（Evaluation）ツールの開発を担当。Pythonで実装し、Azure AI Foundryの組み込み評価器を使って、GroundednessやRelevanceなどの評価指標で出力をスコアリングしています。"
+    },
+    "devpro": {
+      "role": "Software Developer",
+      "org": "DevPro · Farm Credit Canada向けコンサルティング開発",
+      "date": "2021.08 – 2026.02",
+      "p1": "Webアプリケーションの開発・保守。サーバー側はJava（Spring Boot）、フロントエンドはAngular、HTML、CSSを使用。",
+      "p2": "要件整理・設計からテスト、リリース、運用サポートまで開発の全工程に関わり、アジャイル/スクラムのチームでスプリント計画、コードレビュー、振り返りを行いました。"
+    },
+    "uregina": {
+      "degree": "コンピュータサイエンス学士（理学）",
+      "org": "University of Regina（カナダ）",
+      "p1": "2020年秋学期にDean's Honor Listに選出。"
+    },
+    "esl": {
+      "role": "ボランティア（新入生サポート）",
+      "org": "University of Regina ESLプログラム（English as a Second Language）",
+      "date": "2017 – 2021 · 毎学期",
+      "p1": "学期の始まり（8月と1月）ごとに、ESLプログラムに新しく加わる学生をサポート。学生証や交通カードの発行といった手続きから大学の案内まで、幅広く手助けしました。英語に不安のある学生には、簡単な中国語・日本語での通訳も行いました。"
+    }
+  },
+  "skills": {
+    "title": "使っている技術",
+    "backend": "バックエンド",
+    "frontend": "フロントエンド",
+    "ai": "AI・クラウド",
+    "ways": "働き方",
+    "codeReview": "コードレビュー"
+  },
+  "contact": {
+    "title": "お気軽にどうぞ",
+    "text": "企業システムやAI評価のことなど、お気軽にご連絡ください。LinkedInからご連絡いただけます。GitHubでは取り組んでいることも公開しています。"
+  },
+  "footer": {
+    "backToTop": "ページトップへ ↑"
+  }
+}
